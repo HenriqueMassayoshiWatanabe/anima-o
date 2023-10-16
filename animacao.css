@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: url(parque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.corredor1{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    background: url(mega.png);
+    width: calc(1591px / 10);
+    height: 157px;
+    animation: correr 1s steps(10) infinite,
+               locomover 3s linear infinite;
+}
+@keyframes correr{
+    0% {background-position: 0px;}
+    100% {background-position: -1591px}
+}
+@keyframes locomover{
+    0% {transform: translateX(-100px);}
+    100%{transform: translateX(1350px);}
+}
+.corredor2{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    background: url(correr1.png);
+    width: calc(636px / 8);
+    height: 99px;
+    animation: correr1 1s steps(8) infinite,
+               locomover1 3s linear infinite;
+}
+@keyframes correr1{
+    0% {background-position: 0px;}
+    100% {background-position: -636px}
+}
+@keyframes locomover1{
+    0% {transform: translateX(-100px);}
+    100%{transform: translateX(1350px);}
+}
+.corredor3{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    background: url(ash1.png);
+    width: calc(627px / 6);
+    height: 132px;
+    animation: correr2 1s steps(6) infinite,
+               locomover2 4s linear infinite;
+}
+@keyframes correr2{
+    0% {background-position: 0px;}
+    100% {background-position: -627px}
+}
+@keyframes locomover2{
+    0% {transform: translateX(-100px);}
+    100%{transform: translateX(1350px);}
+}
+
+
+.corredor4{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    background: url(kirb.png);
+    width: calc(307px / 10);
+    height: 34px;
+    animation: correr3 1s steps(10) infinite,
+               locomover3 3s linear infinite;
+}
+@keyframes correr3{
+    0% {background-position: 0px;}
+    100% {background-position: -307px}
+}
+@keyframes locomover3{
+    0% {transform: translateX(-100px);}
+    100%{transform: translateX(1350px);}
+}
